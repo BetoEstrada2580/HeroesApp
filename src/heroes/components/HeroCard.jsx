@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom';
 
 export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance, characters, }) => {
-    const heroURL = `/assets/heroes/${id}.jpg`;
+    const heroURL = `../images/${id}.jpg`;
     const CharactersByHero = ({ alter_ego, characters }) => {
         if (alter_ego === characters) { return (<></>); }
         return <p>{characters}</p>
