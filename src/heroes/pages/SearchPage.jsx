@@ -60,12 +60,14 @@ export const SearchPage = () => {
                     <hr />
                     <div
                         className="alert alert-primary animate__animated animate__fadeIn"
-                        style={{ display: showSearh ? '' : 'none' }}>
+                        style={{ display: showSearh ? '' : 'none' }}
+                        aria-label="alert-primary">
                         Search a hero
                     </div>
                     <div
                         className="alert alert-danger animate__animated animate__fadeIn"
-                        style={{ display: showError ? '' : 'none' }}>
+                        style={{ display: showError ? '' : 'none' }}
+                        aria-label="alert-danger">
                         No hero with <b>{q}</b>
                     </div>
                     {
